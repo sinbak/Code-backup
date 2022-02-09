@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLEEP</title>
+    <link href="./sleep.css" rel="stylesheet" type="text/css"/> 
+    <script>
+        var index = 0; 
+        window.onload = function(){
+            slide();
+        }
+        
+        function slide() {
+        var i;
+        var x = document.getElementsByClassName("sleepshow");  
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";   
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;  
+        }   
+        x[index-1].style.display = "block";  
+        setTimeout(slide, 4000);   
+    }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1 >Let's Sleep</h1>
+        <p>How to sleep well?</p>
+    </div>
+    <nav>
+        <div onclick = "ChangeImg()" onclick = "ChangeImg2">
+            <img id= "sun" src="img/half-moon.png" >
+        </div>
+    </nav>
+    <main>
+        <div>
+            <img class="sleepshow" src="./img/sleep.png" >
+            <img class="sleepshow" src="./img/bed.png">
+            <img class="sleepshow" src="./img/diet.png">
+            <img class="sleepshow" src="./img/headphones.png">
+        </div>
+    </main>
+</body>
+</html>

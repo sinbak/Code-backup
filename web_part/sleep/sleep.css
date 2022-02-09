@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    background:indigo;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+nav div{
+    width: 100%;
+    border: solid 1px #57a4ba;
+    background-color: #57a4ba;
+    color: white;
+    margin: 0;
+    padding:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+main {
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+nav img{
+    width:50px;
+}

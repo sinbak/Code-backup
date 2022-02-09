@@ -1,0 +1,40 @@
+h1{
+    font-size : 64px;
+    font-family: "fantasy", Times, serif ;
+    text-align : center;
+}
+
+h2{
+    margin-top: 100px;
+    text-align: center;
+}
+h3{
+    margin-top: 60px;
+}
+
+p i{
+    font-size : 48px;
+    font-family: 'Akaya Telivigala', cursive;
+    color:blueviolet;
+}
+p b{
+    color: darkorchid;
+    
+}
+/*이미지*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font{
+    color:dodgerblue;
+}
+.center{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}

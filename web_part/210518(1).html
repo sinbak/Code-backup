@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Property Basic</title>
+    <style>
+        #one {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            margin : 0 30px 20px 30px;
+            padding: 0 30px 0 30px;
+        }
+
+        .box {
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+            border-radius: 50px 40px 20px 10px;
+            background-color: aliceblue;
+            width: 150px;
+            height: 100px;
+        }
+
+        #box_1 {
+            /*display:none;*/
+            /*display:inline;*/
+            display:inline-block;
+            width: 100px;
+            height: 50px;
+            margin:10px;
+        }
+
+        #box_2 {
+            display: inline-block;
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 첫번째 예제 -->
+    <div id="one"></div>
+    
+    <!-- 두번째 예제 -->
+    <div class="box">
+        <h1>좋은 아침</h1>
+    </div>
+
+    <!-- 세번째 예제 -->
+    <span>더미 객체 </span>
+    <div id="box_1">대상 객체 </div>
+    <span>더미 객체 </span>
+
+    <!-- 네번째 예제 -->
+    <p>의미 없는 객체</p>
+    <span>더미 객체 </span>
+    <div id="box_2">대상 객체 </div>
+    <span>더미 객체 </span>
+    <p>의미 없는 객체</p>
+</body>
+
+</html>

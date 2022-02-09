@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset='utf-8'>
+<style>
+body {
+	font-family: '돋움';
+	color: #444444;
+}
+h3 {
+	border-left: solid 5px gray;
+	padding-left: 10px;
+}
+div {
+	width: 610px;
+	text-align: left;
+}
+table, td {
+	border: solid 1px #aaaaaa;
+}
+table {
+	border-collapse: collapse;
+}
+table {
+	width: 610px;
+	font-size: 12px;
+	border-top: solid 2px #aaaaaa;
+	margin-top: 15px;
+}
+tr {
+	height: 60px;
+	vertical-align: top;
+}
+td {
+	width: 76px;
+	padding: 5px;
+}
+#day {
+	height: 20px;
+	background-color: #f8f9f2;
+	text-align: center;
+	font-weight: bold;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+#myback {
+	/*background-color: yellow;*/
+	background-image: url('data:image/jpeg;base64,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');
+	color:blueviolet;
+}
+#friback {
+	background-color: skyblue;
+	color: yellow;
+}
+#bro {
+	background-color: black;
+	color: white;
+}
+#exam {
+	background-color:coral;
+	color:darkmagenta;
+}
+.march {
+	color: gray;
+}
+</style>
+</head>
+<body>
+<h3>나의 4월 일정</h3>
+<div>◀ 2021년 4월 ▶</div>
+<table>
+	<tr id='day'>
+		<td><span class='red'>일</span></td>
+		<td>월</td>
+		<td>화</td> 
+		<td>수</td> 
+		<td>목</td>     
+		<td>금</td>   
+		<td><span class='blue'>토</span></td>   
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>1</td> 
+		<td>2</td> 
+		<td id="myback">3<br>나의 생일</td></td>     
+		<td>4</td>   
+		<td><span class='blue'>5</span></td>   
+	</tr>
+	<tr>
+		<td><span class='red'>6</span></td>
+		<td>7</td>
+		<td>8</td> 
+		<td>9</td> 
+		<td>10</td>     
+		<td>11</td>   
+		<td><span class='blue'>12</span></td>   
+	</tr>
+	<tr>
+		<td><span class='red'>13</span></td>
+		<td id= 'exam'>14<br>중간고사</td>
+		<td id= 'exam'>15<br>중간고사</td> 
+		<td id= 'exam'>16<br>중간고사</td> 
+		<td id= 'exam'>17<br>중간고사</td>     
+		<td>18<br></td>   
+		<td><span class='blue'>19</span></td>   
+	</tr>
+	<tr>
+		<td><span class='red'>20</span></td>
+		<td>21<br></td>
+		<td>22</td> 
+		<td>23</td> 
+		<td>24</td>     
+		<td>25</td>   
+		<td><span class='blue'>26</span></td>   
+	</tr>
+	<tr>
+		<td><span class='red'>27</span></td>
+		<td>28</td>
+		<td id="friback">29<br>영훈 생일</td> 
+		<td id='bro'>30<br>규호 형 생일</td> 
+		<td class="march">1</td>     
+		<td class="march">2</td>   
+		<td class="march">3</td>   
+	</tr>
+</table>
+</body>
+</html>

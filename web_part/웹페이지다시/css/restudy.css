@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    background:lightgreen;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+nav div{
+    width: 100%;
+    border: solid 1px #D4F5DB;
+    background-color: #D4F5DB;
+    color: white;
+    margin: 0;
+    padding:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+nav img{
+    width:50px;
+}
+
+h2{
+    font-size:30px;
+}
+
+h3{
+    font-size:25px;
+}
+
+.left {
+    float: left;
+    width: 70%;
+}
+
+
+.right {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+    padding-top:0;
+}
+
+.C_block {
+    background-color: rgb(255, 252, 202);
+    width: 100%;
+    padding: 10px;
+    border:solid 2px black;
+    margin: 10px 0 10px 0;
+}
+
+.outline {
+    background: #D4F5DB;
+    padding: 20px;
+    margin-top: 20px;
+}
+.outline2 {
+    background: #D4F5DB;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+}
+main img{
+    border: 5px solid black;
+}
+.fontsize{
+    font-size: 25px;
+}
+h3{
+    font-size:30px;
+}
+h4{
+    font-size: 25px ;
+}
+li{
+    font-size: 22px;
+}
+
+.contents:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .left, .right {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: none;
+    }
+}
